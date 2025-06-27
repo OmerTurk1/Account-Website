@@ -34,10 +34,10 @@ form.addEventListener('submit', async (e) => {
   try {
     const res = await fetch(scriptURL, {
       method: 'POST',
-      body: JSON.stringify(payload),
       headers: {
         'Content-Type': 'text/plain;charset=utf-8'
-      }
+      },
+      body: JSON.stringify(payload)
     });
 
     const data = await res.json();
