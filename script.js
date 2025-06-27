@@ -36,7 +36,7 @@ form.addEventListener('submit', async (e) => {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: {
-        'Content-Type': 'text/plain' // bu önemli!
+        'Content-Type': 'text/plain;charset=utf-8'
       }
     });
 
